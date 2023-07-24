@@ -102,7 +102,7 @@
       "#fbc9c9"
       ],
       "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
-      "#252535"  // Discord uses 7 digits less than the chat BG color so I redided 7 digits of your BG
+      "#252535" 
       ],
       "SCROLLBAR_AUTO_THUMB": [
       "#fab387"
@@ -141,6 +141,7 @@
       "PRIMARY_300": "#1e1e2e",
       "PRIMARY_360": "#fab387",
       "PRIMARY_400": "#fab387",
+      "PRIMARY_460": "#181825", 
       "PRIMARY_500": "#cdd6f4",
       "PRIMARY_600": "#1e1e2e",
       "PRIMARY_630": "#1e1e2e",
