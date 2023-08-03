@@ -101,6 +101,9 @@
       "MENTION_FOREGROUND": [
       "#fbc9c9"
       ],
+      "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#11111b"
+      ],
       "SCROLLBAR_AUTO_THUMB": [
       "#89b4fa"
       ],
@@ -138,6 +141,7 @@
       "PRIMARY_300": "#1e1e2e",
       "PRIMARY_360": "#89b4fa",
       "PRIMARY_400": "#89b4fa",
+      "PRIMARY_460": "#181825",
       "PRIMARY_500": "#cdd6f4",
       "PRIMARY_600": "#1e1e2e",
       "PRIMARY_630": "#1e1e2e",
