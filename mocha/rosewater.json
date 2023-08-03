@@ -98,6 +98,9 @@
       "MENTION_BACKGROUND": [
       "#f258584d"
       ],
+      "REDESIGN_ACTIVITY_CARD_BACKGROUND": [
+      "#11111b"
+      ],
       "MENTION_FOREGROUND": [
       "#fbc9c9"
       ],
@@ -138,6 +141,7 @@
       "PRIMARY_300": "#1e1e2e",
       "PRIMARY_360": "#f5e0dc",
       "PRIMARY_400": "#f5e0dc",
+      "PRIMARY_460": "#181825",
       "PRIMARY_500": "#cdd6f4",
       "PRIMARY_600": "#1e1e2e",
       "PRIMARY_630": "#1e1e2e",
