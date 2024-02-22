@@ -8,7 +8,7 @@
     ],
     "semanticColors": {
       "BACKGROUND_ACCENT": [
-      "#8caaee"
+      "#ca9ee6"
       ],
       "BACKGROUND_MENTIONED": [
       "rgba(229, 200, 144, 0.1)"
@@ -62,7 +62,7 @@
       "#232634"
       ],
       "CHANNEL_ICON": [
-      "#949ec5"
+      "#a5adce"
       ],
       "CHANNELS_DEFAULT": [
       "#949ec5"
