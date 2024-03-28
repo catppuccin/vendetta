@@ -1,5 +1,5 @@
 {
-    "name": "Catppuccin Frappe",
+    "name": "Catppuccin Frappe (Gen's Fork)",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       {
@@ -205,11 +205,11 @@
        "version":"0",
        "icons":{
           "ic_new_pins":"#ed8796",
-          "StatusStreaming": "#ca9ee6",
-          "StatusMobileOnline": "#a6d189",
-          "StatusIdle": "#e5c890",
-          "StatusDND": "#e78284",
-          "StatusOffline": "#737994",
+          "StatusStreaming": "#c6a0f6",
+          "StatusMobileOnline": "#a6da95",
+          "StatusIdle": "#f5a97f",
+          "StatusDND": "#ed8796",
+          "StatusOffline": "#363a4f",
           "StatusOnline": "#a6d189"
  }
 },
