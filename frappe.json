@@ -134,20 +134,20 @@
       "#a5adce"
       ],
       "TEXT_NORMAL": [
-      "#ca9ee6"
+      "#c6d0f5"
       ],
-                "TEXT_PRIMARY": [
-            "#ca9ee6"
-        ],
-        "TEXT_SECONDARY": [
-        "#b5bfe2"
-        ]
+      "TEXT_PRIMARY": [
+      "#c6d0f5"
+      ],
+      "TEXT_SECONDARY": [
+      "#b5bfe2"
+      ]
   },
    "rawColors": {
       "BRAND_260": "#f2d5cf",
       "BRAND_360": "#85c1dc",
       "BRAND_500": "#ef9f76",
-        "BRAND_560": "#6c7086",
+      "BRAND_560": "#6c7086",
       "PRIMARY_100": "#ca9ee6",
       "PRIMARY_300": "#303446",
       "PRIMARY_360": "#ca9ee6",
@@ -161,7 +161,7 @@
       "PRIMARY_800": "#292c3c",
       "PLUM_1": "#c6d0f5",
       "PLUM_10": "#b5bfe2",
-      "PLUM_11": "#3C3949",
+      "PLUM_11": "#303446",
       "PLUM_13": "#b5bfe2",
       "PLUM_15": "#51576d",
       "PLUM_16": "#232634",
