@@ -74,7 +74,7 @@
       "#303446"
       ],
       "HEADER_PRIMARY": [
-      "#ca9ee6"
+      "#c6d0f5"
       ],
       "HEADER_SECONDARY": [
       "#a5adce"
@@ -83,16 +83,16 @@
       "#2e2828"
       ],
       "INTERACTIVE_ACTIVE": [
-      "#ca9ee6"
+      "#c6d0f5"
       ],
       "INTERACTIVE_HOVER": [
-      "#ca9ee6"
+      "#c6d0f5"
       ],
       "INTERACTIVE_MUTED": [
       "rgba(198, 208, 245, 0.3)"
       ],
       "INTERACTIVE_NORMAL": [
-      "#ca9ee6"
+      "#c6d0f5"
       ],
       "MENTION_BACKGROUND": [
       "#f258584d"
