@@ -1,5 +1,5 @@
 {
-    "name": "Catppuccin Mocha (Gen's Fork)",
+    "name": "Catppuccin Mocha",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       {
@@ -11,7 +11,7 @@
       "#6c7086"
       ],
       "BACKGROUND_ACCENT": [
-      "#fab387"
+      "#cba6f7"
       ],
       "BACKGROUND_MESSAGE_HOVER": [
       "#6c7086"
@@ -137,7 +137,7 @@
         "rawColors": {
       "BRAND_260": "#f5e0dc",
       "BRAND_360": "#74c7ec",
-      "BRAND_500": "#fab387",
+      "BRAND_500": "#cba6f7",
         "BRAND_560": "#f5e0dc",
       "PRIMARY_100": "#cdd6f4",
       "PRIMARY_300": "#1e1e2e",
@@ -160,12 +160,12 @@
       "PLUM_18": "#313244",
       "PLUM_19": "#313244",
       "PLUM_20": "#1e1e2e",
-      "PLUM_21": "#fab38750",
+      "PLUM_21": "#cba6f750",
       "PLUM_22": "#313244",
       "PLUM_24": "#11111b",
       "PLUM_25": "#181825",
       "PLUM_3": "#cdd6f4",
-      "PLUM_4": "#fab38750",
+      "PLUM_4": "#cba6f750",
       "PLUM_6": "#cdd6f4",
       "PLUM_9": "#cdd6f4",
       "GREEN_100": "#a6e3a1",
