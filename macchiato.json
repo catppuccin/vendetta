@@ -1,5 +1,5 @@
 {
-    "name": "Catppuccin Macchiato (gen's fork)",
+    "name": "Catppuccin Macchiato",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       {
@@ -8,7 +8,7 @@
     ],
     "semanticColors": {
       "BACKGROUND_ACCENT": [
-      "#f5a97f"
+      "#8aadf4"
       ],
       "BACKGROUND_MENTIONED": [
       "#363a4f"
@@ -100,16 +100,16 @@
       "#181926"
       ],
       "SCROLLBAR_AUTO_THUMB": [
-      "#f5a97f"
+      "#8aadf4"
       ],
       "SCROLLBAR_AUTO_TRACK": [
-      "#f5a97f"
+      "#8aadf4"
       ],
       "SCROLLBAR_THIN_THUMB": [
-      "#f5a97f"
+      "#8aadf4"
       ],
       "SCROLLBAR_THIN_TRACK": [
-      "#f5a97f"
+      "#8aadf4"
       ],
       "SPOILER_HIDDEN_BACKGROUND": [
       "#939ab7"
@@ -136,7 +136,7 @@
     "rawColors": {
       "BRAND_260": "#f4dbd6",
       "BRAND_360": "#7dc4e4",
-      "BRAND_500": "#f5a97f",
+      "BRAND_500": "#8aadf4",
         "BRAND_560": "#6c7086",
       "PRIMARY_100": "#cad3f5",
       "PRIMARY_300": "#24273a",
@@ -159,12 +159,12 @@
       "PLUM_18": "#363a4f",
       "PLUM_19": "#363a4f",
       "PLUM_20": "#24273a",
-      "PLUM_21": "#f5a97f50",
+      "PLUM_21": "#8aadf450",
       "PLUM_22": "#363a4f",
       "PLUM_24": "#181926",
       "PLUM_25": "#1e2030",
       "PLUM_3": "#cad3f5",
-      "PLUM_4": "#f5a97f50",
+      "PLUM_4": "#8aadf450",
       "PLUM_6": "#cad3f5",
       "PLUM_9": "#cad3f5",
       "GREEN_100": "#a6da95",
