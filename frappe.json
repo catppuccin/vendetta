@@ -1,5 +1,5 @@
 {
-    "name": "Catppuccin Frappe (Gen's Fork)",
+    "name": "Catppuccin Frappe",
     "description": "Soothing pastel theme for the high-spirited!",
     "authors": [
       {
@@ -8,7 +8,7 @@
     ],
     "semanticColors": {
       "BACKGROUND_ACCENT": [
-      "#ef9f76"
+      "#8caaee"
       ],
       "BACKGROUND_MENTIONED": [
       "rgba(229, 200, 144, 0.1)"
