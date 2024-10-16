@@ -10,35 +10,35 @@
 </p>
 
 <p align="center">
-  <img src="assets/react-native/preview.webp"/>
+  <img src="assets/preview.webp"/>
 </p>
 
 ## Previews
 
 <details>
 <summary>🌻 Latte</summary>
-<img src="assets/react-native/latte.webp"/>
+<img src="assets/latte.webp"/>
 </details>
 <details>
 <summary>🪴 Frappé</summary>
-<img src="assets/react-native/frappe.webp"/>
+<img src="assets/frappe.webp"/>
 </details>
 <details>
 <summary>🌺 Macchiato</summary>
-<img src="assets/react-native/macchiato.webp"/>
+<img src="assets/macchiato.webp"/>
 </details>
 <details>
 <summary>🌿 Mocha</summary> 
-<img src="assets/react-native/mocha.webp"/>
+<img src="assets/mocha.webp"/>
 </details>
 
 ## Usage
 
 1. Choose a flavor, and copy its link below:
-	- **Latte**: https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/latte.json
-	- **Frappe**: https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/frappe.json
-	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/macchiato.json
-	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/discord/main/src/react-native/mocha.json
+	- **Latte**: https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json
+	- **Frappe**: https://raw.githubusercontent.com/catppuccin/vendetta/main/frappe.json
+	- **Macchiato**: https://raw.githubusercontent.com/catppuccin/vendetta/main/macchiato.json
+	- **Mocha**:  https://raw.githubusercontent.com/catppuccin/vendetta/main/mocha.json
 2. Head to `Settings` > `Bunny` or `Enmity` > `Themes`
 3. Paste the copied link and press `Install`
 4. Select your theme and you're ready to go!
