@@ -12,7 +12,6 @@ whiskers:
 {
   "name": "Catppuccin {{ flavor.name }}",
   "description": "Soothing pastel theme for the high-spirited!",
-  "spec": "2",
   "authors": [
     {
       "name": "Catppuccin"
@@ -131,9 +130,26 @@ whiskers:
     "GREEN_830": "#{{ palette.green.hex }}",
     "GREEN_860": "#{{ palette.green.hex }}",
     "GREEN_900": "#{{ palette.green.hex }}",
+    "GUILD_BOOSTING_BLUE": "#{{ palette.blue.hex }}",
+    "GUILD_BOOSTING_BLUE_FOR_GRADIENTS": "#{{ palette.blue.hex }}",
     "GUILD_BOOSTING_PINK": "#{{ palette.pink.hex }}",
     "GUILD_BOOSTING_PURPLE": "#{{ palette.mauve.hex }}",
     "GUILD_BOOSTING_PURPLE_FOR_GRADIENTS": "#{{ palette.mauve.hex }}",
+    "ORANGE_260": "#{{ palette.peach.hex }}",
+    "ORANGE_300": "#{{ palette.peach.hex }}",
+    "ORANGE_330": "#{{ palette.peach.hex }}",
+    "ORANGE_345": "#{{ palette.peach.hex }}",
+    "ORANGE_360": "#{{ palette.peach.hex }}",
+    "ORANGE_400": "#{{ palette.peach.hex }}",
+    "ORANGE_430": "#{{ palette.peach.hex }}",
+    "ORANGE_460": "#{{ palette.peach.hex }}",
+    "ORANGE_500": "#{{ palette.peach.hex }}",
+    "ORANGE_530": "#{{ palette.peach.hex }}",
+    "ORANGE_560": "#{{ palette.peach.hex }}",
+    "ORANGE_600": "#{{ palette.peach.hex }}",
+    "ORANGE_630": "#{{ palette.peach.hex }}",
+    "ORANGE_660": "#{{ palette.peach.hex }}",
+    "ORANGE_700": "#{{ palette.peach.hex }}",    
     "RED_260": "#{{ palette.red.hex }}",
     "RED_300": "#{{ palette.red.hex }}",
     "RED_330": "#{{ palette.red.hex }}",
@@ -203,7 +219,22 @@ whiskers:
       "SettingsIcon": "#{{ palette.text.hex }}",
       "StarOutlineIcon": "#{{ palette.overlay2.hex }}",
       "StarIcon": "#{{ palette.yellow.hex }}",
-      "ReactionIcon": "#{{ palette.text.hex }}"
+      "ReactionIcon": "#{{ palette.text.hex }}”,
+      "XSmallIcon": "#{{ palette.text.hex }}",      
+      "MoreHorizontalIcon": "#{{ palette.text.hex }}",
+      "back-icon": "#{{ palette.text.hex }}",         
+      "UserCheckIcon": "#{{ palette.text.hex }}",
+      "MobilePhoneIcon": "#{{ palette.text.hex }}",
+      "ic_crop": "#{{ palette.text.hex }}",
+      "ic_arrow_back_24px": "#{{ palette.text.hex }}",
+      "ic_undo": "#{{ palette.text.hex }}",
+      "ic_paint_brush": "#{{ palette.text.hex }}",
+      "ic_stamp": "#{{ palette.text.hex }}", 
+      "ic_add_text": "#{{ palette.text.hex }}",
+      "ic_at": "#{{ palette.text.hex }}",
+      "ic_download_24px": "#{{ palette.text.hex }}",
+      "ic_overflow_android": "#{{ palette.text.hex }}" 
     }
-  }
+  },
+    "spec": 2
 }
