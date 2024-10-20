@@ -220,7 +220,7 @@ whiskers:
       "SettingsIcon": "#{{ palette.overlay2.hex }}",
       "StarOutlineIcon": "#{{ palette.overlay2.hex }}",
       "StarIcon": "#{{ palette.yellow.hex }}",
-      "ReactionIcon": "#{{ palette.text.hex }}”,
+      "ReactionIcon": "#{{ palette.text.hex }}",
       "XSmallIcon": "#{{ palette.overlay2.hex }}",      
       "MoreHorizontalIcon": "#{{ palette.text.hex }}",
       "back-icon": "#{{ palette.text.hex }}",         
