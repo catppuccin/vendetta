@@ -38,6 +38,7 @@ whiskers:
     "BG_BASE_TERTIARY": [ "#{{ palette.crust.hex }}", "#{{ palette.crust.hex }}" ],
     "EMBED_BACKGROUND": [ "#{{ palette.surface0.hex }}", "#{{ palette.surface0.hex }}" ],
     "CARD_PRIMARY_BG": [ "#{{ palette.base.hex }}", "#{{ palette.base.hex }}" ],
+    "CARD_PRIMARY_PRESSED_BG": [ "#{{ palette.overlay0.hex }}", "#{{ palette.overlay0.hex }}"],
     "CARD_SECONDARY_BG": [ "#{{ palette.base.hex }}" ],
     "CHANNEL_ICON": [ "#{{ palette.overlay2.hex }}", "#{{ palette.overlay2.hex }}" ],
     "CHANNELS_DEFAULT": [ "#{{ palette.subtext0.hex }}", "#{{ palette.subtext0.hex }}" ],
