@@ -32,7 +32,10 @@
 <img src="assets/mocha.webp"/>
 </details>
 
+
 ## Usage
+> [!IMPORTANT]
+> This is the home for the shared theme format that [Enmity](https://github.com/enmity-mod/enmity), [Bunny](https://github.com/pyoncord/Bunny) & [† Vendetta](https://github.com/vendetta-mod/Vendetta) use.
 
 1. Choose a flavor, and copy its link below:
 	- **Latte**: https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json
@@ -43,7 +46,7 @@
 3. Paste the copied link and press `Install`
 4. Select your theme and you're ready to go!
 
-> [!IMPORTANT]
+> [!NOTE]
 > Light mode can be used **only with Latte theme**.
 
 
@@ -70,8 +73,6 @@ Themes+ is required to theme some hardcoded elements (applied when themes+ is lo
 
 ### Enmity
  Head over to [acquitelol/rosiecord](https://github.com/acquitelol/rosiecord?tab=readme-ov-file#how-to-install) and follow the steps provided. 
-
-
 
 ## 💝 Thanks to
 
