@@ -67,7 +67,7 @@ Themes+ is required to theme some hardcoded elements (applied when themes+ is lo
 2. Click `Extract` > `Import` Then select `Meloso`
 
 ### Enmity
- Head over to [Rosie's repo](https://github.com/acquitelol/rosiecord?tab=readme-ov-file#how-to-install) and follow the steps provided. 
+ Head over to [acquitelol/rosiecord](https://github.com/acquitelol/rosiecord?tab=readme-ov-file#how-to-install) and follow the steps provided. 
 
 
 
