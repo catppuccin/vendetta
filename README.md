@@ -6,7 +6,7 @@
 </h3>
 
 <p align="center">
-	<a href="https://github.com/riivx/vendetta/issues?q=is%3Aissue+is%3Aopen+label%3Amobile"><img src="https://img.shields.io/github/issues/riivx/vendetta?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/catppuccin/vendetta/issues?q=is%3Aissue+is%3Aopen"><img src="https://img.shields.io/github/issues/catppuccin/vendetta?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
 </p>
 
 <p align="center">
@@ -49,7 +49,7 @@
 
 ## Themes+
 Themes+ is required to theme some hardcoded elements (applied when themes+ is loaded) as well as iconpacks.
-- #### Iconpacks
+#### Iconpacks
 1. Copy `https://bunny.nexpid.xyz/themes-plus`
 2. Head to `Settings` > `Bunny` > `Plugins`
 3. Paste the copied link and press `Install`
@@ -63,8 +63,10 @@ Themes+ is required to theme some hardcoded elements (applied when themes+ is lo
 
 ## Fonts
 ### Bunny
-1. Head to `Settings` > `Bunny` > `Fonts` > `add button` > Extract font from theme
-2. Click `Extract` > `Import` Then select `Meloso`
+1. Head to `Settings` > `Bunny` > `Fonts` > `add button`
+2. Follow shown options
+> [!NOTE]
+> The font pack shown in the screenshots is [Flow Circular](https://gist.githubusercontent.com/Covkie/d4124cfc4df15e7790167ac88e820e0d/raw/02f0c7124f233ee236f0682d464c7cb22c2ea6e9/FlowCircular-font-snippet.json)
 
 ### Enmity
  Head over to [acquitelol/rosiecord](https://github.com/acquitelol/rosiecord?tab=readme-ov-file#how-to-install) and follow the steps provided. 
