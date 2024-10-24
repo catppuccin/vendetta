@@ -64,7 +64,7 @@ whiskers:
     "THREAD_CHANNEL_SPINE": [ "#{{ palette.surface2.hex }}", "#{{ palette.surface2.hex }}" ]
   },
   "rawColors": {
-    "BRAND_260": "#{{ palette.crust.hex }}",
+    "BRAND_260": "#{{ palette.overlay0.hex }}",
     "BRAND_360": "#{{ palette.blue.hex }}",
     "BRAND_500": "#{{ palette.blue.hex }}",
     "BRAND_560": "#{{ palette.blue.hex }}", {# reaction outline #}
