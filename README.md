@@ -44,11 +44,12 @@
 > Vendetta is no longer included in the instructions below, as it has reached
 > "End of Life."
 
-1. Choose a flavor, and copy its link below:
-   - **Latte**: <https://raw.githubusercontent.com/catppuccin/vendetta/main/latte.json>
-   - **Frappe**: <https://raw.githubusercontent.com/catppuccin/vendetta/main/frappe.json>
-   - **Macchiato**: <https://raw.githubusercontent.com/catppuccin/vendetta/main/macchiato.json>
-   - **Mocha**: <https://raw.githubusercontent.com/catppuccin/vendetta/main/mocha.json>
+1. Choose a flavor + accent combination from the [themes](./themes) directory and copy the URL in the following format:
+   ```
+   https://raw.githubusercontent.com/catppuccin/vendetta/main/themes/<flavor>/<accent>.json
+   ```
+   For example, if you'd like to use the `mocha` flavor with the `mauve` accent, copy the following link: `https://raw.githubusercontent.com/catppuccin/vendetta/main/themes/mocha/mauve.json`
+
 2. Head to `Settings` > `Bunny` or `Enmity` > `Themes`
 3. Paste the copied link and press `Install`
 4. Select your theme and you're ready to go!
