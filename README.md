@@ -80,21 +80,6 @@ loaded) as well as icon packs.
 > [guide](https://discord.com/channels/950850315601711176/1239393517151846412)
 > as it loads Vendetta by default which is broken past Discord version 223.
 
-### Fonts
-
-#### Bunny
-
-1. Head to `Settings` > `Bunny` > `Fonts` > `add button`
-2. Follow shown options
-
-> [!NOTE]  
-> The font pack shown in the screenshots is [Flow Circular](https://fonts.google.com/specimen/Flow+Circular).
-
-#### Enmity
-
-Head over to
-[acquitelol/rosiecord](https://github.com/acquitelol/rosiecord?tab=readme-ov-file#how-to-install)
-and follow the steps provided.
 
 ## 💝 Thanks to
 
