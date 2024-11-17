@@ -72,10 +72,6 @@ loaded).
 > [guide](https://discord.com/channels/950850315601711176/1239393517151846412)
 > as it loads Vendetta by default which is broken past Discord version 223.
 > 
-> If the icon pack doesn't apply after discord loads, then switch to a different
-> server and back.
-
-
 
 ## 💝 Thanks to
 
