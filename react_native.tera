@@ -3,14 +3,15 @@ whiskers:
   version: 2.1.0
   matrix:
     - flavor
-  filename: "{{ flavor.identifier }}.json"
+    - accent
+  filename: "themes/{{ flavor.identifier }}/{{ accent }}.json"
 ---
 
 {%- set palette = flavor.colors -%}
 {#- based on vendetta/mocha.json -#}
 
 {
-  "name": "Catppuccin {{ flavor.name }}",
+  "name": "Catppuccin {{ flavor.name }} - {{ accent | capitalize }}",
   "description": "Soothing pastel theme for the high-spirited!",
   "authors": [
     {
@@ -19,7 +20,7 @@ whiskers:
   ],
   "semanticColors": {
     "ANDROID_RIPPLE": [ "#{{ palette.overlay0.hex }}", "#{{ palette.overlay0.hex }}" ],
-    "BACKGROUND_ACCENT": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
+    "BACKGROUND_ACCENT": [ "#{{ palette[accent].hex }}", "#{{ palette[accent].hex }}" ],
     "BACKGROUND_MENTIONED": [ "#{{ palette.yellow.hex }}17", "#{{ palette.yellow.hex }}17" ],
     "BACKGROUND_MENTIONED_HOVER": [ "#{{ palette.overlay2.hex }}", "#{{ palette.overlay2.hex }}" ],
     "BACKGROUND_MODIFIER_ACCENT": [ "#{{ palette.surface0.hex }}", "#{{ palette.surface0.hex }}" ],
@@ -56,8 +57,8 @@ whiskers:
     "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHANNEL_NAME_TEXT": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [ "#{{ palette.mantle.hex }}", "#{{ palette.mantle.hex }}" ],
-    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
-    "TEXT_LINK": [ "#{{ palette.blue.hex }}", "#{{ palette.blue.hex }}" ],
+    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "#{{ palette[accent].hex }}", "#{{ palette[accent].hex }}" ],
+    "TEXT_LINK": [ "#{{ palette[accent].hex }}", "#{{ palette[accent].hex }}" ],
     "TEXT_MUTED": [ "#{{ palette.subtext0.hex }}", "#{{ palette.subtext0.hex }}" ],
     "TEXT_NORMAL": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
     "TEXT_PRIMARY": [ "#{{ palette.text.hex }}", "#{{ palette.text.hex }}" ],
@@ -65,24 +66,24 @@ whiskers:
   },
   "rawColors": {
     "BRAND_260": "#{{ palette.overlay0.hex }}",
-    "BRAND_360": "#{{ palette.blue.hex }}",
-    "BRAND_500": "#{{ palette.blue.hex }}",
-    "BRAND_560": "#{{ palette.blue.hex }}", {# reaction outline #}
-    "BLUE_260": "#{{ palette.blue.hex }}",
-    "BLUE_300": "#{{ palette.blue.hex }}",
-    "BLUE_330": "#{{ palette.blue.hex }}",
-    "BLUE_345": "#{{ palette.blue.hex }}",
-    "BLUE_360": "#{{ palette.blue.hex }}",
-    "BLUE_400": "#{{ palette.blue.hex }}",
-    "BLUE_430": "#{{ palette.blue.hex }}",
-    "BLUE_460": "#{{ palette.blue.hex }}",
-    "BLUE_500": "#{{ palette.blue.hex }}",
-    "BLUE_530": "#{{ palette.blue.hex }}",
-    "BLUE_560": "#{{ palette.blue.hex }}",
-    "BLUE_600": "#{{ palette.blue.hex }}",
-    "BLUE_630": "#{{ palette.blue.hex }}",
-    "BLUE_660": "#{{ palette.blue.hex }}",
-    "BLUE_700": "#{{ palette.blue.hex }}",
+    "BRAND_360": "#{{ palette[accent].hex }}",
+    "BRAND_500": "#{{ palette[accent].hex }}",
+    "BRAND_560": "#{{ palette[accent].hex }}", {# reaction outline #}
+    "BLUE_260": "#{{ palette[accent].hex }}",
+    "BLUE_300": "#{{ palette[accent].hex }}",
+    "BLUE_330": "#{{ palette[accent].hex }}",
+    "BLUE_345": "#{{ palette[accent].hex }}",
+    "BLUE_360": "#{{ palette[accent].hex }}",
+    "BLUE_400": "#{{ palette[accent].hex }}",
+    "BLUE_430": "#{{ palette[accent].hex }}",
+    "BLUE_460": "#{{ palette[accent].hex }}",
+    "BLUE_500": "#{{ palette[accent].hex }}",
+    "BLUE_530": "#{{ palette[accent].hex }}",
+    "BLUE_560": "#{{ palette[accent].hex }}",
+    "BLUE_600": "#{{ palette[accent].hex }}",
+    "BLUE_630": "#{{ palette[accent].hex }}",
+    "BLUE_660": "#{{ palette[accent].hex }}",
+    "BLUE_700": "#{{ palette[accent].hex }}",
     "PRIMARY_100": "#{{ palette.text.hex }}",
     "PRIMARY_300": "#{{ palette.base.hex }}",
     "PRIMARY_360": "#{{ palette.mauve.hex }}",
@@ -103,7 +104,7 @@ whiskers:
     "PLUM_20": "#{{ palette.mantle.hex }}",
     "PLUM_22": "#{{ palette.crust.hex }}",
     "PLUM_3": "#{{ palette.text.hex }}",
-    "PLUM_4": "#{{ palette.blue.hex }}",
+    "PLUM_4": "#{{ palette[accent].hex }}",
     "PLUM_6": "#{{ palette.text.hex }}",
     "GREEN_100": "#{{ palette.green.hex }}",
     "GREEN_130": "#{{ palette.green.hex }}",
@@ -131,8 +132,8 @@ whiskers:
     "GREEN_830": "#{{ palette.green.hex }}",
     "GREEN_860": "#{{ palette.green.hex }}",
     "GREEN_900": "#{{ palette.green.hex }}",
-    "GUILD_BOOSTING_BLUE": "#{{ palette.blue.hex }}",
-    "GUILD_BOOSTING_BLUE_FOR_GRADIENTS": "#{{ palette.blue.hex }}",
+    "GUILD_BOOSTING_BLUE": "#{{ palette[accent].hex }}",
+    "GUILD_BOOSTING_BLUE_FOR_GRADIENTS": "#{{ palette[accent].hex }}",
     "GUILD_BOOSTING_PINK": "#{{ palette.pink.hex }}",
     "GUILD_BOOSTING_PURPLE": "#{{ palette.mauve.hex }}",
     "GUILD_BOOSTING_PURPLE_FOR_GRADIENTS": "#{{ palette.mauve.hex }}",
@@ -201,14 +202,14 @@ whiskers:
     "mentionLineColor": "#{{ palette.yellow.hex }}",
     "icons":{
       "ic_close_24px": "#{{ palette.text.hex }}",
-      "ic_radio_circle_checked": "#{{ palette.blue.hex }}",
+      "ic_radio_circle_checked": "#{{ palette[accent].hex }}",
       "ic_radio_circle_checked__overlay": "#{{ palette.text.hex }}",
-      "ic_radio_square_24px": "#{{ palette.blue.hex }}",
-      "ic_radio_square_checked_24px": "#{{ palette.blue.hex }}",
+      "ic_radio_square_24px": "#{{ palette[accent].hex }}",
+      "ic_radio_square_checked_24px": "#{{ palette[accent].hex }}",
       "ic_radio_square_checked_24px__overlay": "#{{ palette.text.hex }}",
-      "ic_selection_checked_24px": "#{{ palette.blue.hex }}",
+      "ic_selection_checked_24px": "#{{ palette[accent].hex }}",
       "ic_selection_checked_24px__overlay": "#{{ palette.text.hex }}",
-      "img_guild_folder": "#{{ palette.blue.hex }}",
+      "img_guild_folder": "#{{ palette[accent].hex }}",
       "img_nitro_remixing": "#{{ palette.text.hex }}",
       "StatusMobileOnline": "#{{ palette.green.hex }}",
       "StatusIdle": "#{{ palette.yellow.hex }}",

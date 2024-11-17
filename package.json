@@ -5,7 +5,7 @@
   "scripts": {
     "build": "command -v whiskers >/dev/null 2>&1 || { echo >&2 \"Whiskers is not installed. Please install it from https://github.com/catppuccin/whiskers or your package manager of choice\"; exit 1; } && whiskers react_native.tera",
     "watch": "npm-watch build",
-    "host": "echo \"make sure to allow your phone through your firewall.\" && http-server -p 3120",
+    "host": "echo \"make sure to allow your phone through your firewall.\" && cd themes/ && http-server -p 3120",
     "dev": "pnpm watch & pnpm host"
   },
   "devDependencies": {
