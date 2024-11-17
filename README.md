@@ -59,26 +59,22 @@
 ### Themes+
 
 Themes+ is required to theme some hard-coded elements (applied when themes+ is
-loaded) as well as icon packs.
+loaded).
 
-### Icon Packs
-
+#### Installation
 1. Copy `https://bunny.nexpid.xyz/themes-plus`
-2. Head to `Settings` > `Bunny` > `Plugins`
+2. Head to `Settings` > `Bunny` > `Plugins` > `+`
 3. Paste the copied link and press `Install`
-4. Go back to `Bunny` > `Plugins` > `themes+ settings`
-5. Click `Configuration` > `Mode` > `Manual` > Choose icon pack
-6. Hit reload
-
-> [!IMPORTANT]  
-> If the icon pack doesn't apply after discord loads, then switch to a different
-> server and back.
->
+> [!IMPORTANT]
 > If you are using Enmity, install
 > [VendettaCommpat](https://discord.com/channels/950850315601711176/1019645460589318165/1211473409154744350)
 > plugin first. After doing so, follow this
 > [guide](https://discord.com/channels/950850315601711176/1239393517151846412)
 > as it loads Vendetta by default which is broken past Discord version 223.
+> 
+> If the icon pack doesn't apply after discord loads, then switch to a different
+> server and back.
+
 
 
 ## 💝 Thanks to
