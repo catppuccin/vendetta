@@ -1,6 +1,6 @@
 ---
 whiskers:
-  version: 2.1.0
+  version: 2.5.1
   matrix:
     - flavor
     - accent
@@ -66,9 +66,11 @@ whiskers:
   },
   "rawColors": {
     "BRAND_260": "#{{ palette.overlay0.hex }}",
+    "BRAND_300": "#{{ palette[accent].hex }}",
     "BRAND_360": "#{{ palette[accent].hex }}",
     "BRAND_500": "#{{ palette[accent].hex }}",
     "BRAND_560": "#{{ palette[accent].hex }}", {# reaction outline #}
+    "BRAND_730": "#{{ palette.base.hex }}", 
     "BLUE_260": "#{{ palette[accent].hex }}",
     "BLUE_300": "#{{ palette[accent].hex }}",
     "BLUE_330": "#{{ palette[accent].hex }}",
@@ -85,6 +87,7 @@ whiskers:
     "BLUE_660": "#{{ palette[accent].hex }}",
     "BLUE_700": "#{{ palette[accent].hex }}",
     "PRIMARY_100": "#{{ palette.text.hex }}",
+    "PRIMARY_200": "#{{ palette.crust.hex }}",
     "PRIMARY_300": "#{{ palette.base.hex }}",
     "PRIMARY_360": "#{{ palette.mauve.hex }}",
     "PRIMARY_400": "#{{ palette.surface2.hex }}",
@@ -94,6 +97,7 @@ whiskers:
     "PRIMARY_630": "#{{ palette.surface0.hex }}",
     "PRIMARY_660": "#{{ palette.crust.hex }}",
     "PRIMARY_700": "#{{ palette.crust.hex }}",
+    "PRIMARY_730": "#{{ palette.text.hex }}",
     "PRIMARY_800": "#{{ palette.mantle.hex }}",
     "PLUM_10": "#{{ palette.overlay2.hex }}",
     "PLUM_13": "#{{ palette.overlay0.hex }}",
@@ -101,6 +105,7 @@ whiskers:
     "PLUM_16": "#{{ palette.surface0.hex }}",
     "PLUM_17": "#{{ palette.crust.hex }}",
     "PLUM_18": "#{{ palette.surface0.hex }}",
+    "PLUM_19": "#{{ palette.surface0.hex }}",
     "PLUM_20": "#{{ palette.mantle.hex }}",
     "PLUM_22": "#{{ palette.crust.hex }}",
     "PLUM_3": "#{{ palette.text.hex }}",
