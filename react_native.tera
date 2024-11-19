@@ -71,7 +71,7 @@ whiskers:
     "BRAND_360": "{{ accent.hex }}",
     "BRAND_500": "{{ accent.hex }}",
     "BRAND_560": "{{ accent.hex }}", {# reaction outline #}
-    "BRAND_630": "{{ surface0 }}", 
+    "BRAND_630": "{{ surface0.hex }}", 
     "BRAND_730": "{{ base.hex }}", 
     "BLUE_260": "{{ accent.hex }}",
     "BLUE_300": "{{ accent.hex }}",
