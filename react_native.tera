@@ -241,7 +241,8 @@ whiskers:
       "ic_add_text": "{{ overlay2.hex }}",
       "ic_at": "{{ overlay2.hex }}",
       "ic_download_24px": "{{ text.hex }}",
-      "ic_overflow_android": "{{ text.hex }}" 
+      "ic_overflow_android": "{{ text.hex }}",
+      "ic_nitro_rep_24px": "{{ overlay2.hex }}"
     }
   },
     "spec": 2
