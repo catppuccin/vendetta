@@ -36,12 +36,7 @@
 
 ## Usage
 
-> [!IMPORTANT]  
-> This is the home for the shared theme format that [†
-> Vendetta](https://github.com/vendetta-mod/Vendetta),
-> [Bunny](https://github.com/pyoncord/Bunny), [Revenge
-> ](https://github.com/revenge-mod/revenge-bundle) & [
-> Enmity](https://github.com/enmity-mod/enmity)  use.
+> [!IMPORTANT]
 > Vendetta is no longer included in the instructions below, as it has reached
 > "End of Life."
 
