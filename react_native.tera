@@ -71,6 +71,7 @@ whiskers:
     "BRAND_360": "{{ accent.hex }}",
     "BRAND_500": "{{ accent.hex }}",
     "BRAND_560": "{{ accent.hex }}", {# reaction outline #}
+    "BRAND_630": "{{ surface0.hex }}", 
     "BRAND_730": "{{ base.hex }}", 
     "BLUE_260": "{{ accent.hex }}",
     "BLUE_300": "{{ accent.hex }}",
@@ -88,7 +89,7 @@ whiskers:
     "BLUE_660": "{{ accent.hex }}",
     "BLUE_700": "{{ accent.hex }}",
     "PRIMARY_100": "{{ text.hex }}",
-    "PRIMARY_200": "{{ crust.hex }}",
+    "PRIMARY_200": "{{ text.hex }}",
     "PRIMARY_300": "{{ base.hex }}",
     "PRIMARY_360": "{{ mauve.hex }}",
     "PRIMARY_400": "{{ surface2.hex }}",
@@ -98,16 +99,18 @@ whiskers:
     "PRIMARY_630": "{{ surface0.hex }}",
     "PRIMARY_660": "{{ crust.hex }}",
     "PRIMARY_700": "{{ crust.hex }}",
-    "PRIMARY_730": "{{ text.hex }}",
+    "PRIMARY_730": "{{ crust.hex }}",
     "PRIMARY_800": "{{ mantle.hex }}",
     "PLUM_10": "{{ overlay2.hex }}",
     "PLUM_13": "{{ overlay0.hex }}",
+    "PLUM_14": "{{ surface2.hex }}",
     "PLUM_15": "{{ surface1.hex }}",
     "PLUM_16": "{{ surface0.hex }}",
     "PLUM_17": "{{ crust.hex }}",
     "PLUM_18": "{{ surface0.hex }}",
     "PLUM_19": "{{ surface0.hex }}",
     "PLUM_20": "{{ mantle.hex }}",
+    "PLUM_21": "{{ mantle.hex }}",
     "PLUM_22": "{{ crust.hex }}",
     "PLUM_3": "{{ text.hex }}",
     "PLUM_4": "{{ accent.hex }}",
@@ -241,7 +244,8 @@ whiskers:
       "ic_add_text": "{{ overlay2.hex }}",
       "ic_at": "{{ overlay2.hex }}",
       "ic_download_24px": "{{ text.hex }}",
-      "ic_overflow_android": "{{ text.hex }}" 
+      "ic_overflow_android": "{{ text.hex }}",
+      "ic_nitro_rep_24px": "{{ overlay2.hex }}"
     }
   },
     "spec": 2
