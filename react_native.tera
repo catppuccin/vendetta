@@ -4,13 +4,23 @@ whiskers:
   matrix:
     - flavor
     - accent
-  filename: "themes/{{ flavor.identifier }}/{{ accent }}.json"
+    - format: [v2, unbound, unbound_manifest]
+  filename: 'themes/{% if format == "unbound" or format == "unbound_manifest" %}unbound/{% endif %}{{ flavor.identifier }}/{{ accent }}{% if format == "unbound" %}/bundle{% elif format == "unbound_manifest" %}/manifest{% endif %}.json'
   hex_format: "#{{r}}{{g}}{{b}}{{z}}"
 ---
 
 {#- based on vendetta/mocha.json -#}
 
+{%- macro semantic_color(dark, light="null") %}
+{%- if format == "v2" -%}
+[ "{{ dark.hex }}", {% if light == "null" -%} "{{ dark.hex }}" {%- else -%} "{{ light.hex }}" {%- endif %} ]
+{%- else -%}
+{"type": "color", "value": {%- if flavor.light and light != "null" -%} "{{ light.hex }}" {%- else -%} "{{ dark.hex }}" {%- endif -%}}
+{%- endif -%}
+{%- endmacro -%}
+
 {
+  {%- if format == "v2" or format == "unbound_manifest" %}
   "name": "Catppuccin {{ flavor.name }} - {{ accent | capitalize }}",
   "description": "Soothing pastel theme for the high-spirited!",
   "authors": [
@@ -18,54 +28,62 @@ whiskers:
       "name": "Catppuccin"
     }
   ],
-  {%- set accent = flavor.colors[accent] %}
-  "semanticColors": {
-    "ANDROID_RIPPLE": [ "{{ overlay0.hex }}", "{{ overlay0.hex }}" ],
-    "BACKGROUND_ACCENT": [ "{{ accent.hex }}", "{{ accent.hex }}" ],
-    "BACKGROUND_MENTIONED": [ "{{ yellow.hex }}17", "{{ yellow.hex }}17" ],
-    "BACKGROUND_MENTIONED_HOVER": [ "{{ overlay2.hex }}", "{{ overlay2.hex }}" ],
-    "BACKGROUND_MODIFIER_ACCENT": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "BACKGROUND_MODIFIER_ACTIVE": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "BACKGROUND_MODIFIER_HOVER": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "BACKGROUND_MODIFIER_SELECTED": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "BACKGROUND_MOBILE_PRIMARY": [ "{{ base.hex }}", "{{ mantle.hex }}" ],
-    "BACKGROUND_MOBILE_SECONDARY": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
-    "BACKGROUND_NESTED_FLOATING": [ "{{ mantle.hex }}", "{{ crust.hex }}" ],
-    "BACKGROUND_PRIMARY": [ "{{ base.hex }}", "{{ mantle.hex }}" ],
-    "BACKGROUND_SECONDARY": [ "{{ mantle.hex }}", "{{ base.hex }}" ],
-    "BACKGROUND_SECONDARY_ALT": [ "{{ mantle.hex }}", "{{ surface1.hex }}" ],
-    "BACKGROUND_TERTIARY": [ "{{ crust.hex }}", "{{ surface0.hex }}" ],
-    "BG_BASE_PRIMARY": [ "{{ base.hex }}", "{{ base.hex }}" ],
-    "BG_BASE_SECONDARY": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
-    "BG_BASE_TERTIARY": [ "{{ crust.hex }}", "{{ crust.hex }}" ],
-    "EMBED_BACKGROUND": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "CARD_PRIMARY_BG": [ "{{ base.hex }}", "{{ base.hex }}" ],
-    "CARD_PRIMARY_PRESSED_BG": [ "{{ overlay0.hex }}", "{{ overlay0.hex }}"],
-    "CARD_SECONDARY_BG": [ "{{ base.hex }}" ],
-    "CHANNEL_ICON": [ "{{ overlay2.hex }}", "{{ overlay2.hex }}" ],
-    "CHANNELS_DEFAULT": [ "{{ subtext0.hex }}", "{{ subtext0.hex }}" ],
-    "CHAT_BACKGROUND": [ "{{ base.hex }}", "{{ surface0.hex }}" ],
-    "HEADER_PRIMARY": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "HEADER_SECONDARY": [ "{{ subtext1.hex }}", "{{ subtext1.hex }}" ],
-    "INPUT_BACKGROUND": [ "{{ crust.hex }}", "{{ crust.hex }}" ],
-    "INTERACTIVE_ACTIVE": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "INTERACTIVE_HOVER": [ "{{ overlay2.hex }}", "{{ overlay2.hex }}" ],
-    "INTERACTIVE_MUTED": [ "{{ subtext0.hex }}", "{{ subtext0.hex }}" ],
-    "INTERACTIVE_NORMAL": [ "{{ overlay2.hex }}", "{{ overlay2.hex }}" ],
-    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "REDESIGN_BUTTON_SECONDARY_BORDER": [ "{{ surface1.hex }}", "{{ surface1.hex }}" ],
-    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
-    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "REDESIGN_CHANNEL_NAME_TEXT": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "REDESIGN_CHAT_INPUT_BACKGROUND": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
-    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "{{ accent.hex }}", "{{ accent.hex }}" ],
-    "TEXT_LINK": [ "{{ accent.hex }}", "{{ accent.hex }}" ],
-    "TEXT_MUTED": [ "{{ subtext0.hex }}", "{{ subtext0.hex }}" ],
-    "TEXT_NORMAL": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "TEXT_PRIMARY": [ "{{ text.hex }}", "{{ text.hex }}" ],
-    "THREAD_CHANNEL_SPINE": [ "{{ surface2.hex }}", "{{ surface2.hex }}" ]
+  {%- endif %}
+  {% if format == "unbound_manifest" -%}
+  "id": "catppuccin.{{ flavor.identifier }}.{{ accent }}",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1" {#- remove once rosie pushes optional #}
+  {%- endif %}
+  {%- set accent = flavor.colors[accent] -%}
+  {%- if format != "unbound_manifest" -%}
+  "{% if format == "v2" %}semanticColors{% else %}semantic{% endif %}": {
+    "ANDROID_RIPPLE": {{ self::semantic_color(dark=overlay0) }},
+    "BACKGROUND_ACCENT": {{ self::semantic_color(dark=accent) }},
+    "BACKGROUND_MENTIONED": {{ self::semantic_color(dark=yellow | mod(opacity=0.09)) }},
+    "BACKGROUND_MENTIONED_HOVER": {{ self::semantic_color(dark=overlay2) }},
+    "BACKGROUND_MODIFIER_ACCENT": {{ self::semantic_color(dark=surface0) }},
+    "BACKGROUND_MODIFIER_ACTIVE": {{ self::semantic_color(dark=surface0) }},
+    "BACKGROUND_MODIFIER_HOVER": {{ self::semantic_color(dark=surface0) }},
+    "BACKGROUND_MODIFIER_SELECTED": {{ self::semantic_color(dark=surface0) }},
+    "BACKGROUND_MOBILE_PRIMARY": {{ self::semantic_color(dark=base, light=mantle) }},
+    "BACKGROUND_MOBILE_SECONDARY": {{ self::semantic_color(dark=mantle) }},
+    "BACKGROUND_NESTED_FLOATING": {{ self::semantic_color(dark=mantle, light=crust) }},
+    "BACKGROUND_PRIMARY": {{ self::semantic_color(dark=base, light=mantle) }},
+    "BACKGROUND_SECONDARY": {{ self::semantic_color(dark=mantle, light=base) }},
+    "BACKGROUND_SECONDARY_ALT": {{ self::semantic_color(dark=mantle, light=surface1) }},
+    "BACKGROUND_TERTIARY": {{ self::semantic_color(dark=crust, light=surface0) }},
+    "BG_BASE_PRIMARY": {{ self::semantic_color(dark=base) }},
+    "BG_BASE_SECONDARY": {{ self::semantic_color(dark=mantle) }},
+    "BG_BASE_TERTIARY": {{ self::semantic_color(dark=crust) }},
+    "EMBED_BACKGROUND": {{ self::semantic_color(dark=surface0) }},
+    "CARD_PRIMARY_BG": {{ self::semantic_color(dark=base) }},
+    "CARD_PRIMARY_PRESSED_BG": {{ self::semantic_color(dark=overlay0) }},
+    "CARD_SECONDARY_BG": {{ self::semantic_color(dark=base) }},
+    "CHANNEL_ICON": {{ self::semantic_color(dark=overlay2) }},
+    "CHANNELS_DEFAULT": {{ self::semantic_color(dark=subtext0) }},
+    "CHAT_BACKGROUND": {{ self::semantic_color(dark=base, light=surface0) }},
+    "HEADER_PRIMARY": {{ self::semantic_color(dark=text) }},
+    "HEADER_SECONDARY": {{ self::semantic_color(dark=subtext1) }},
+    "INPUT_BACKGROUND": {{ self::semantic_color(dark=crust) }},
+    "INTERACTIVE_ACTIVE": {{ self::semantic_color(dark=text) }},
+    "INTERACTIVE_HOVER": {{ self::semantic_color(dark=overlay2) }},
+    "INTERACTIVE_MUTED": {{ self::semantic_color(dark=subtext0) }},
+    "INTERACTIVE_NORMAL": {{ self::semantic_color(dark=overlay2) }},
+    "REDESIGN_BUTTON_SECONDARY_BACKGROUND": {{ self::semantic_color(dark=surface0) }},
+    "REDESIGN_BUTTON_SECONDARY_BORDER": {{ self::semantic_color(dark=surface1) }},
+    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": {{ self::semantic_color(dark=mantle) }},
+    "REDESIGN_CHANNEL_CATEGORY_NAME_TEXT": {{ self::semantic_color(dark=text) }},
+    "REDESIGN_CHANNEL_NAME_TEXT": {{ self::semantic_color(dark=text) }},
+    "REDESIGN_CHAT_INPUT_BACKGROUND": {{ self::semantic_color(dark=mantle) }},
+    "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": {{ self::semantic_color(dark=accent) }},
+    "TEXT_LINK": {{ self::semantic_color(dark=accent) }},
+    "TEXT_MUTED": {{ self::semantic_color(dark=subtext0) }},
+    "TEXT_NORMAL": {{ self::semantic_color(dark=text) }},
+    "TEXT_PRIMARY": {{ self::semantic_color(dark=text) }},
+    "THREAD_CHANNEL_SPINE": {{ self::semantic_color(dark=surface2) }}
   },
-  "rawColors": {
+  "{% if format == "v2" %}rawColors{% else %}raw{% endif %}": {
     "BRAND_260": "{{ overlay0.hex }}",
     "BRAND_300": "{{ accent.hex }}",
     "BRAND_360": "{{ accent.hex }}",
@@ -204,7 +222,10 @@ whiskers:
     "YELLOW_900": "{{ yellow.hex }}",
     "WHITE": "{{ base.hex }}",
     "WHITE_500": "{{ base.hex }}"
-  },
+  }{%- endif -%}
+  {%- if format == "unbound" -%},
+  "type": "{% if flavor.dark %}dark{% else %}light{%- endif -%}"
+  {%- elif format == "v2" -%},
   "plus":{
     "version":"0",
     "customOverlays": true,
@@ -248,5 +269,6 @@ whiskers:
       "ic_nitro_rep_24px": "{{ overlay2.hex }}"
     }
   },
-    "spec": 2
+  "spec": 2
+  {%- endif %}
 }
