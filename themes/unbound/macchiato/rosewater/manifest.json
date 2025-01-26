@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Macchiato - Rosewater",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.macchiato.rosewater",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}

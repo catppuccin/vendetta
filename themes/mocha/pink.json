@@ -27,8 +27,8 @@
     "BG_BASE_TERTIARY": [ "#11111b", "#11111b" ],
     "EMBED_BACKGROUND": [ "#313244", "#313244" ],
     "CARD_PRIMARY_BG": [ "#1e1e2e", "#1e1e2e" ],
-    "CARD_PRIMARY_PRESSED_BG": [ "#6c7086", "#6c7086"],
-    "CARD_SECONDARY_BG": [ "#1e1e2e" ],
+    "CARD_PRIMARY_PRESSED_BG": [ "#6c7086", "#6c7086" ],
+    "CARD_SECONDARY_BG": [ "#1e1e2e", "#1e1e2e" ],
     "CHANNEL_ICON": [ "#9399b2", "#9399b2" ],
     "CHANNELS_DEFAULT": [ "#a6adc8", "#a6adc8" ],
     "CHAT_BACKGROUND": [ "#1e1e2e", "#313244" ],
@@ -235,5 +235,5 @@
       "ic_nitro_rep_24px": "#9399b2"
     }
   },
-    "spec": 2
+  "spec": 2
 }

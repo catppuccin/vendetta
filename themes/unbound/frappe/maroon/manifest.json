@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Frappé - Maroon",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.frappe.maroon",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}

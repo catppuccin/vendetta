@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Mocha - Lavender",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.mocha.lavender",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}

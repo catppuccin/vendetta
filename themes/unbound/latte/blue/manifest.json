@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Latte - Blue",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.latte.blue",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}

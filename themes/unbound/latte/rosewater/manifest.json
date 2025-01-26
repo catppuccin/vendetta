@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Latte - Rosewater",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.latte.rosewater",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}

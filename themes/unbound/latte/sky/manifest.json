@@ -1,0 +1,13 @@
+{
+  "name": "Catppuccin Latte - Sky",
+  "description": "Soothing pastel theme for the high-spirited!",
+  "authors": [
+    {
+      "name": "Catppuccin"
+    }
+  ],
+  "id": "catppuccin.latte.sky",
+  "type": "theme",
+  "main": "bundle.json",
+  "version": "0.0.1"
+}
