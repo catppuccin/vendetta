@@ -203,7 +203,11 @@ whiskers:
     "YELLOW_860": "{{ yellow.hex }}",
     "YELLOW_900": "{{ yellow.hex }}",
     "WHITE": "{{ base.hex }}",
-    "WHITE_500": "{{ base.hex }}"
+    "WHITE_500": "{{ base.hex }}",
+    "CHAT_MENTIONS_BACKGROUND_DARK": "{{ accent.hex }}4d", {#- Purely native strings, Colours @mention on Android #}
+    "CHAT_MENTIONS_BACKGROUND_LIGHT": "{{ accent.hex }}4d",
+    "CHAT_MENTIONS_FOREGROUND_DARK": "{{ accent.hex }}",
+    "CHAT_MENTIONS_FOREGROUND_LIGHT": "{{ accent.hex }}"
   },
   "plus":{
     "version":"0",
