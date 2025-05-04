@@ -25,7 +25,7 @@ whiskers:
     "BACKGROUND_MENTIONED": [ "{{ yellow.hex }}17", "{{ yellow.hex }}17" ],
     "BACKGROUND_MENTIONED_HOVER": [ "{{ overlay2.hex }}", "{{ overlay2.hex }}" ],
     "BACKGROUND_MODIFIER_ACCENT": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
-    "BACKGROUND_MODIFIER_ACTIVE": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
+    "BACKGROUND_MODIFIER_ACTIVE": [ "{{ surface2.hex }}", "{{ surface2.hex }}" ],
     "BACKGROUND_MODIFIER_HOVER": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
     "BACKGROUND_MODIFIER_SELECTED": [ "{{ surface0.hex }}", "{{ surface0.hex }}" ],
     "BACKGROUND_MOBILE_PRIMARY": [ "{{ base.hex }}", "{{ mantle.hex }}" ],
@@ -59,7 +59,6 @@ whiskers:
     "REDESIGN_CHANNEL_NAME_TEXT": [ "{{ text.hex }}", "{{ text.hex }}" ],
     "REDESIGN_CHAT_INPUT_BACKGROUND": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
     "REDESIGN_BUTTON_PRIMARY_PRESSED_BACKGROUND": [ "{{ accent.hex }}", "{{ accent.hex }}" ],
-    "REDESIGN_BUTTON_TERTIARY_BACKGROUND": [ "{{ mantle.hex }}", "{{ mantle.hex }}" ],
     "TEXT_LINK": [ "{{ accent.hex }}", "{{ accent.hex }}" ],
     "TEXT_MUTED": [ "{{ subtext0.hex }}", "{{ subtext0.hex }}" ],
     "TEXT_NORMAL": [ "{{ text.hex }}", "{{ text.hex }}" ],
@@ -73,7 +72,7 @@ whiskers:
     "BRAND_300": "{{ accent.hex }}",
     "BRAND_360": "{{ accent.hex }}",
     "BRAND_500": "{{ accent.hex }}",
-    "BRAND_560": "{{ accent.hex }}", {# reaction outline #}
+    "BRAND_560": "{{ accent.hex }}", {#- reaction outline #}
     "BRAND_630": "{{ surface0.hex }}", 
     "BRAND_730": "{{ base.hex }}", 
     "BLUE_260": "{{ accent.hex }}",
@@ -105,7 +104,8 @@ whiskers:
     "PRIMARY_730": "{{ crust.hex }}",
     "PRIMARY_800": "{{ mantle.hex }}",
     "PLUM_10": "{{ overlay2.hex }}",
-    "PLUM_13": "{{ overlay0.hex }}",
+    "PLUM_11": "{{ subtext0.hex }}", {#- forwared text #}
+    "PLUM_13": "{{ subtext0.hex }}",
     "PLUM_14": "{{ surface2.hex }}",
     "PLUM_15": "{{ surface1.hex }}",
     "PLUM_16": "{{ surface0.hex }}",
