@@ -59,7 +59,7 @@ Themes+ is required to theme some hard-coded elements (applied when themes+ is
 loaded).
 
 #### Installation
-1. Copy `https://bunny.nexpid.xyz/themes-plus`
+1. Copy `https://revenge.nexpid.xyz/themes-plus`
 2. Head to `Settings` > `Bunny` or `Revenge` > `Plugins` > `+`
 3. Paste the copied link and press `Install`
 > [!IMPORTANT]
